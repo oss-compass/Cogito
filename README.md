@@ -11,7 +11,7 @@
 
 ### ✨ 核心服务
 
-#### 1. 指标模型数据服务 (`compass_model_data_tools.py`)
+#### 1. 指标模型数据服务 (`mcp_serve/compass_model_data_tools.py`)
 
 此服务运行在 `http://0.0.0.0:8000`，提供以下分析模型工具：
 
@@ -23,7 +23,7 @@
 -   `get_community_service_and_support`: 分析 Issue 和 PR 的响应与处理效率。
 -   `get_collaboration_development_index`: 衡量项目的协作开发效率指数。
 
-#### 2. 丰富化数据服务 (`enriched_data_server.py`)
+#### 2. 丰富化数据服务 (`mcp_serve/enriched_data_server.py`)
 
 此服务运行在 `http://0.0.0.0:8001`，提供以下详细数据工具：
 
@@ -39,7 +39,7 @@
 -   `get_github_event_data`: 获取原始的 GitHub Event 数据。
 -   `get_github_repo_event_data`: 获取仓库级别的 Event 聚合数据。
 
-#### 3. Python 绘图服务 (`python_plot_service.py`)
+#### 3. Python 绘图服务 (`mcp_serve/img_upload_server.py`)
 此服务运行在 `http://0.0.0.0:8004`，提供一个通用的绘图工具：
 
 -   `generate_plot_from_python`: 安全地执行一段 Python 绘图代码（使用 Matplotlib），将生成的图片上传至图床，并返回图片的 URL。
@@ -104,19 +104,19 @@
 
 **终端 1: 启动指标模型数据服务**
 ```bash
-python compass_model_data_tools.py
+python mcp_serve/compass_model_data_tools.py
 ```
 > ✅ 服务成功启动后，你将看到日志输出，服务监听在端口 **8000**。
 
 **终端 2: 启动丰富化数据服务**
 ```bash
-python enriched_data_server.py
+python mcp_serve/enriched_data_server.py
 ```
 > ✅ 服务成功启动后，你将看到日志输出，服务监听在端口 **8001**。
 
 **终端 3: 启动 Python 绘图服务**
 ```bash
-python python_plot_service.py
+python mcp_serve/img_upload_server.py
 ```
 > ✅ 服务成功启动后，你将看到日志输出，服务监听在端口 **8004**。
 
