@@ -1,0 +1,6 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+requests
+python-dotenv
+mcp
