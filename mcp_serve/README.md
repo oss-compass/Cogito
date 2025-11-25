@@ -42,39 +42,6 @@
 
 -   `generate_plot_from_python`: 安全地执行一段 Python 绘图代码（使用 Matplotlib），将生成的图片上传至图床，并返回图片的 URL。
 
-## 🚀 快速开始
-
-本项目推荐使用 `uv` 进行高性能的包管理和虚拟环境创建。
-
-### 环境要求
--   Python 3.8+
--   [uv](https://github.com/astral-sh/uv) (安装: `pip install uv`)
-
-### 安装步骤
-
-1.  **克隆仓库**
-    ```bash
-    git clone [https://github.com/ryan6073/compass-mcp-toolkit.git](https://github.com/ryan6073/compass-mcp-toolkit.git)
-    cd compass-mcp-toolkit
-    ```
-
-2.  **创建并激活虚拟环境 (使用 uv)**
-    ```bash
-    # 创建虚拟环境，uv 会自动生成一个 .venv 文件夹
-    uv venv
-
-    # 激活虚拟环境
-    # macOS / Linux
-    source .venv/bin/activate
-    # Windows (CMD)
-    # .venv\Scripts\activate
-    ```
-
-3.  **安装依赖 (使用 uv)**
-    ```bash
-    uv pip install -r requirements.txt
-    ```
-
 ## 🔧 环境配置
 
 在启动服务之前，你需要在项目根目录下创建一个 `.env` 文件来存放你的 Gitee Access Token。
