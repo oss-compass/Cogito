@@ -31,6 +31,8 @@ source .venv/bin/activate  # macOS/Linux
 
 # 3. 安装所有依赖
 uv pip install -r ./mcp_serve/requirements.txt
+uv pip install google-adk
+uv pip install python-dotenv
 ```
 
 启动流程请按照以下顺序启动系统：先启动 MCP 数据服务。再启动 ADK 智能体。
