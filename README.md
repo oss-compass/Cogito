@@ -1,8 +1,8 @@
 # Cogito
 
-## Gitee Compass MCP 工具包 (Compass MCP Toolkit)
+## OSS-Compass MCP 工具包 (Compass MCP Toolkit)
 
-本项目是一个基于 [FastMCP](https://github.com/jlowin/fastmcp) 框架构建的服务套件，旨在提供一套完整的工具，用于调用 [Gitee Compass](https://oss-compass.isrc.ac.cn/) 社区的开放 API。
+本项目是一个基于 [FastMCP](https://github.com/jlowin/fastmcp) 框架构建的服务套件，旨在提供一套完整的工具，用于调用 [OSS-Compass](https://oss-compass.org/) 社区的开放 API。
 
 它目前包含两个独立的服务：
 1.  **指标模型数据服务**: 提供高阶的分析模型数据，例如贡献者画像、项目活跃度、社区健康度等。
